@@ -7,11 +7,13 @@ import Menu from './Menu';
 function App() {
   return (
     <div className="App">
-      <div className="navbar-container">
-        <Navbar />
-      </div>
-      <div className="menu-container">
-        <Menu />
+      <div className="main-content">
+        <div className="navbar-container">
+          <Navbar />
+        </div>
+        <div className="menu-container">
+          <Menu />
+        </div>
       </div>
       <div className="contact-info-container">
         <ContactInfo />

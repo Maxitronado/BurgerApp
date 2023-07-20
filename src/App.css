@@ -2,16 +2,13 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: flex-start;
-  padding-top: 10px; /* Adjust according to the actual height of your navbar */
 }
 
 
-.Content {
-  padding: 20px;
-  max-width: 800px;
-  margin: auto;
+.main-content {
+  flex-grow: 1;
 }
 
 nav {
@@ -73,12 +70,9 @@ nav {
 }
 
 .navbar-container {
-  position: fixed; /* Fix the position of the navbar */
-  top: 0; /* Align it to the top */
-  left: 0; /* Align it to the left */
-  width: 100%; /* Make it span the entire width */
   z-index: 1000; /* Make sure it's on top of other elements */
 }
+
 
 .card {
   margin: 20px;
@@ -106,4 +100,20 @@ nav {
 body {
   margin: 0;
   padding: 0;
+}
+
+.footer {
+  width: 100%;
+  background-color: #f8f9fa;
+  padding: 20px 0;
+}
+
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.content {
+  margin-bottom: 20px;
 }
